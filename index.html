@@ -178,7 +178,7 @@
                         <input type="text" id="name" placeholder="Name" class="contact__input">
                         <input type="email" id="email" placeholder="Email" class="contact__input">
                         <textarea id="message" placeholder="Message" rows="10" class="contact__input"></textarea>
-                        <input type="submit" value="Send Message" id="send-button" class="contact__button button">
+                        <input type="submit" onclick="sendMail()" value="Send Message" id="send-button" class="contact__button button">
                     </form>
                 </div>
             </section>
@@ -187,7 +187,7 @@
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
     <script>
         (function(){
-            emailjs.init("Yoga_Gusti_Rachmadi"); // Ganti dengan User ID Anda
+            emailjs.init("dyW1xov0whJPyBb5z"); // Ganti dengan User ID Anda
 
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault(); // Menghentikan pengiriman form default
@@ -203,7 +203,7 @@
                         message_html: message
                     };
 
-                    emailjs.send('service_bs3qm19', 'template_y7zg6gd', templateParams) // Ganti dengan Service ID dan Template ID Anda
+                    emailjs.send('service_bs3qm19', 'template_x0sntn9', templateParams) // Ganti dengan Service ID dan Template ID Anda
                         .then(function(response) {
                             console.log('SUCCESS!', response.status, response.text);
                             alert("Message sent successfully!");
