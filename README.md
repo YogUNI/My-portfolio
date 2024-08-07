@@ -1,4 +1,4 @@
-My Personal Portfolip https://yoguni.github.io/My-portfolio/
+My Personal Portfolio https://yoguni.github.io/My-portfolio/
 
 This Project was built using these technologies
 - SCSS
